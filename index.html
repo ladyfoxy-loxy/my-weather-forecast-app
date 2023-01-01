@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link href="src/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/f16b5943c3.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <div class="main-container">
+      <div class="search-container">
+        <form id="search-form">
+          <input
+            placeholder="Enter a city"
+            class="search-form-input"
+            id="city-input"
+          />
+          <button type="submit" class="submit-btn" id="search-city-btn">
+            Search
+          </button>
+        </form>
+      </div>
+      <div class="container">
+        <h1 class="city-name" id="main-city">
+          TOKYO
+        </h1>
+        <h2>Monday, October 31</h2>
+        <span class="main-tempr" id="main-city-tempr">
+          25° C
+        </span>
+        <span class="day-temperatures">29° C / 18° C</span>
+        <br />
+        <!-- <span class="day-description" id="weather-description">Clear</span>
+        <br /> -->
+        <i class="fa-regular fa-sun" width="150"></i>
+      </div>
+      <div class="prediction-list">
+        <div class="col">
+          <div class="prediction-item">
+            <i class="fa-solid fa-cloud-sun"></i>
+            <br />
+            <span class="prediction-day">Tue</span>
+            <span>29°/18° C</span>
+          </div>
+        </div>
+        <div class="col">
+          <div class="prediction-item">
+            <i class="fa-solid fa-cloud"></i>
+            <br />
+            <span class="prediction-day">Wed</span>
+            <span>29°/18° C</span>
+          </div>
+        </div>
+        <div class="col">
+          <div class="prediction-item">
+            <i class="fa-solid fa-cloud-sun"></i>
+            <br />
+            <span class="prediction-day">Thu</span>
+            <span>25°/20° C</span>
+          </div>
+        </div>
+        <div class="col">
+          <div class="prediction-item">
+            <i class="fa-solid fa-cloud-sun"></i>
+            <br />
+            <span class="prediction-day">Fri</span>
+            <span>29°/19° C</span>
+          </div>
+        </div>
+        <div class="col">
+          <div class="prediction-item">
+            <i class="fa-solid fa-cloud-sun"></i>
+            <br />
+            <span class="prediction-day">Sat</span>
+            <span>29°/18° C</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>

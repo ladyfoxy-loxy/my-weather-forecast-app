@@ -1,0 +1,135 @@
+body {
+    font-family: "Work Sans", sans-serif;
+  }
+  
+  .main-container {
+    max-width: 520px;
+    max-height: 679px;
+    padding: 0;
+    margin: 30px auto;
+    background-color: #fff0a5;
+    text-align: center;
+    border: 1.5px solid #45171d;
+    box-shadow: 8px 6px 2px rgba(228, 172, 50, 0.35);
+  }
+  
+  .search-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .search-form {
+    width: 350px;
+    border: 1px solid #45171d;
+    border-radius: 5px;
+    height: 32px;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding-left: 5px;
+  }
+  
+  .search-form-input {
+    width: 350px;
+    border: 1px solid #45171d;
+    border-radius: 5px;
+    height: 32px;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding-left: 5px;
+  }
+  
+  .submit-btn {
+    padding: 8px;
+    font-family: "Work Sans", sans-serif;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #468966;
+    border: 1px solid #45171d;
+    color: white;
+    margin-top: 20px;
+    transition: all 200ms ease-in-out;
+  }
+  
+  .submit-btn:hover {
+    background-color: #ffa323;
+  }
+  
+  h1 {
+    color: #468966;
+  }
+  
+  .city-name {
+    text-align: center;
+    padding: 20px 20px 0 20px;
+    font-size: 3em;
+    letter-spacing: 10px;
+    font-weight: 900;
+  }
+  
+  h2 {
+    color: #ffa323;
+    font-size: 2em;
+    font-weight: 900;
+    margin-top: 0;
+  }
+  
+  .main-tempr {
+    font-size: 60px;
+    color: #45171d;
+    font-weight: 400;
+  }
+  
+  .day-temperatures {
+    color: #45171d;
+  }
+  
+  .day-description {
+    color: #45171d;
+  }
+  
+  .fa-sun {
+    color: #ffa323;
+    font-size: 80px;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .prediction-list {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .col {
+    font-family: "Work Sans", sans-serif;
+    font-size: 15px;
+    margin-top: 70px;
+    border: 1px solid #45171d;
+    color: #45171d;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    max-width: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .col:not(:last-child) {
+    margin-right: 20px;
+  }
+  
+  .prediction-item {
+    text-align: center;
+  }
+  
+  .prediction-day {
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  
