@@ -87,13 +87,19 @@ body {
   
   .day-description {
     color: #45171d;
+    text-transform: capitalize;
   }
-  
-  .fa-sun {
-    color: #ffa323;
-    font-size: 80px;
+
+  .day-description:first-letter {
+    text-transform: capitalize;
   }
-  
+
+  .main-icon {
+    margin: 0 auto;
+    height: 80px;
+    width: 80px;
+  }
+
   .container {
     display: flex;
     flex-direction: column;
@@ -103,12 +109,13 @@ body {
   .prediction-list {
     display: flex;
     justify-content: center;
+    padding-top: 
   }
   
   .col {
     font-family: "Work Sans", sans-serif;
     font-size: 15px;
-    margin-top: 70px;
+    margin-top: 50px;
     border: 1px solid #45171d;
     color: #45171d;
     border-radius: 5px;

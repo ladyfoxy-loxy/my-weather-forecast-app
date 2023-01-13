@@ -58,22 +58,17 @@ function displayTemperature(response) {
   let temperature = Math.round(response.data.main.temp);
   let temperatureElement = document.querySelector("#main-city-tempr");
   let h1 = document.querySelector("#main-city");
+  let weatherDescr = document.querySelector("#weather-description");
+  let description = response.data.weather[0].description;
+  let iconElement = document.querySelector("#icon");
 
   temperatureElement.innerHTML = `${temperature}° C`;
+  weatherDescr.innerHTML = description;
 
   h1.innerHTML = response.data.name.toUpperCase();
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 }
-
-// function displayTemperature(response) {
-//   let temperature = Math.round(response.data.main.temp);
-//   let temperatureElement = document.querySelector("#main-city-tempr");
-//   let weatherDescr = document.querySelector("#weather-description");
-//   let description = response.data.weather[0].description;
-//   let h1 = document.querySelector("#main-city");
-
-//   temperatureElement.innerHTML = `${temperature}° C`;
-
-//   weatherDescr.innerHTML = description;
-
-//   h1.innerHTML = `${response.data.name}`.toUpperCase();
-// }
