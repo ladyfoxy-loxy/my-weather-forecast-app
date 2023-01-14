@@ -45,7 +45,7 @@ function searchCity(city) {
 function showCity(event) {
   event.preventDefault();
   let cityInput = document.querySelector("#city-input");
-
+  
   searchCity(cityInput.value);
 
   cityInput.value = "";
@@ -54,6 +54,8 @@ function showCity(event) {
 let findCity = document.querySelector("#search-form");
 findCity.addEventListener("submit", showCity);
 
+searchCity("Tokyo");
+
 function displayTemperature(response) {
   let temperature = Math.round(response.data.main.temp);
   let temperatureElement = document.querySelector("#main-city-tempr");
@@ -61,13 +63,14 @@ function displayTemperature(response) {
   let weatherDescr = document.querySelector("#weather-description");
   let description = response.data.weather[0].description;
   let iconElement = document.querySelector("#icon");
-
+  
   temperatureElement.innerHTML = `${temperature}° C`;
   weatherDescr.innerHTML = description;
 
   h1.innerHTML = response.data.name.toUpperCase();
   iconElement.setAttribute(
     "src",
+
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);

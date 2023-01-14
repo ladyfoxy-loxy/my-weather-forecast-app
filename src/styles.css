@@ -76,7 +76,7 @@ body {
   }
   
   .main-tempr {
-    font-size: 60px;
+    font-size: 50px;
     color: #45171d;
     font-weight: 400;
   }
@@ -87,7 +87,6 @@ body {
   
   .day-description {
     color: #45171d;
-    text-transform: capitalize;
   }
 
   .day-description:first-letter {
@@ -96,8 +95,8 @@ body {
 
   .main-icon {
     margin: 0 auto;
-    height: 80px;
-    width: 80px;
+    height: 110px;
+    width: 110px;
   }
 
   .container {
@@ -115,7 +114,7 @@ body {
   .col {
     font-family: "Work Sans", sans-serif;
     font-size: 15px;
-    margin-top: 50px;
+    margin-top: 15px;
     border: 1px solid #45171d;
     color: #45171d;
     border-radius: 5px;
