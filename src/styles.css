@@ -1,7 +1,7 @@
 body {
     font-family: "Work Sans", sans-serif;
   }
-  
+ 
   .main-container {
     max-width: 520px;
     max-height: 679px;
@@ -87,6 +87,8 @@ body {
   
   .day-description {
     color: #45171d;
+    font-weight: 500;
+    margin-top: 10px;
   }
 
   .day-description:first-letter {
