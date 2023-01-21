@@ -1,9 +1,14 @@
 body {
     font-family: "Work Sans", sans-serif;
   }
+
+  ul {
+    padding: 0px;
+    margin: 0px;
+  }
  
   .main-container {
-    max-width: 520px;
+    max-width: 540px;
     max-height: 679px;
     padding: 0;
     margin: 30px auto;
@@ -19,7 +24,7 @@ body {
   }
   
   .search-form {
-    width: 350px;
+    width: 370px;
     border: 1px solid #45171d;
     border-radius: 5px;
     height: 32px;
@@ -29,7 +34,7 @@ body {
   }
   
   .search-form-input {
-    width: 350px;
+    width: 370px;
     border: 1px solid #45171d;
     border-radius: 5px;
     height: 32px;
@@ -39,7 +44,7 @@ body {
   }
   
   .submit-btn {
-    padding: 8px;
+    padding: 8px 20px;
     font-family: "Work Sans", sans-serif;
     font-size: 16px;
     text-align: center;
@@ -62,7 +67,7 @@ body {
   
   .city-name {
     text-align: center;
-    padding: 20px 20px 0 20px;
+    padding: 10px 10px 0 10px;
     font-size: 3em;
     letter-spacing: 10px;
     font-weight: 900;
@@ -80,18 +85,21 @@ body {
     color: #45171d;
     font-weight: 400;
   }
-  
-  .day-temperatures {
-    color: #45171d;
-  }
-  
-  .day-description {
-    color: #45171d;
-    font-weight: 500;
+
+  .weather-details {
+    color: #468966;
+    list-style: none;
     margin-top: 10px;
   }
 
-  .day-description:first-letter {
+  .weather-item {
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 5px;
+    padding-inline-start: 0px;
+  }
+
+  .weather-item:first-letter {
     text-transform: capitalize;
   }
 
@@ -107,23 +115,24 @@ body {
     text-align: center;
   }
   
-  .prediction-list {
+  .forecast-list {
     display: flex;
     justify-content: center;
-    padding-top: 
   }
   
   .col {
     font-family: "Work Sans", sans-serif;
+    font-weight: 700;
     font-size: 15px;
     margin-top: 15px;
     border: 1px solid #45171d;
     color: #45171d;
     border-radius: 5px;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     padding: 15px;
-    max-width: 50px;
+    max-width: 57px;
     margin-bottom: 20px;
   }
   
@@ -131,17 +140,29 @@ body {
     margin-right: 20px;
   }
   
-  .prediction-item {
+  .forecast-item {
     text-align: center;
   }
   
-  .prediction-day {
+  .forecast-day {
     display: block;
     margin-bottom: 10px;
     margin-top: 10px;
+    font-weight: 700;
+  }
+
+  .forecast-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+  }
+
+  .weather-forecast-temperature-min {
+    opacity: 0.7;
   }
 
   .code-link {
     text-align: center;
+    margin-top: 15px;
   }
   

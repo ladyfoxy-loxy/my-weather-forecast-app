@@ -39,59 +39,18 @@
             <h2>Monday, October 31</h2>
             <span class="main-tempr" id="main-city-tempr">° C
             </span>
-            <!-- <span class="day-temperatures">29° C / 18° C</span>
-            <br /> -->
-            <span class="day-description" id="weather-description">Clear</span>
-            <br />
+            <ul class="weather-details">
+                <li class="weather-item">Humidity: <span id="humidity"></span> %</li>
+                <li class="weather-item">Wind: <span id="wind"></span> m/h</li>
+                <li class="weather-item" id="weather-description">Clear</li>
+            </ul>
             <img
             src=""
             alt="Clear"
             class="main-icon"
             id="icon"/>
         </div>
-        <div class="prediction-list">
-            <div class="col">
-            <div class="prediction-item">
-                <i class="fa-solid fa-cloud-sun"></i>
-                <br />
-                <span class="prediction-day">Tue</span>
-                <span>29°/18° C</span>
-            </div>
-            </div>
-            <div class="col">
-            <div class="prediction-item">
-                <i class="fa-solid fa-cloud"></i>
-                <br />
-                <span class="prediction-day">Wed</span>
-                <span>29°/18° C</span>
-            </div>
-            </div>
-            <div class="col">
-            <div class="prediction-item">
-                <i class="fa-solid fa-cloud-sun"></i>
-                <br />
-                <span class="prediction-day">Thu</span>
-                <span>25°/20° C</span>
-            </div>
-            </div>
-            <div class="col">
-            <div class="prediction-item">
-                <i class="fa-solid fa-cloud-sun"></i>
-                <br />
-                <span class="prediction-day">Fri</span>
-                <span>29°/19° C</span>
-            </div>
-            </div>
-            <div class="col">
-            <div class="prediction-item">
-                <i class="fa-solid fa-cloud-sun"></i>
-                <br />
-                <span class="prediction-day">Sat</span>
-                <span>29°/18° C</span>
-            </div>
-            </div>
-        </div>
-        </div>
+        <div id="forecast"></div>
         <div class="code-link">
             <a href="https://github.com/ladyfoxy-loxy/my-weather-forecast-app" target="blank">Open-source code</a>
             by Valeriia Zaverukha
